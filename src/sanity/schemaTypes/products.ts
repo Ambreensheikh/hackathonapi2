@@ -5,7 +5,8 @@ interface ProductField {
   title: string;
  
  validation?: (Rule: import('sanity').Rule) => import('sanity').Rule;
-  options?: any;
+ options?: { source?: string; list?: { title: string; value: string }[] 
+ hotspot?: boolean;}; 
   description?: string;
 }
 

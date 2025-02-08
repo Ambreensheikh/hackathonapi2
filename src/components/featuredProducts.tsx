@@ -7,7 +7,8 @@ import {  four } from '@/sanity/lib/queries'
 import { urlFor } from '@/sanity/lib/image'
 
 
-const FeaturedProducts=()=> {
+
+const FeaturedProducts = () => {
   const [product,setProduct]= useState<Product[]>([])
   useEffect(()=>{
     async function fetchProduct(){

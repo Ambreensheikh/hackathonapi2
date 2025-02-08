@@ -1,14 +1,9 @@
 
 
-export default {
-    access: [
-       {
-         name: 'editor',
-          title: 'Editor',
-          permissions: ['create', 'update', 'publish', 'unpublish']
-        },
+const orderSchema =  {
+    
          
-      ],
+      
     name:"order",
     type:"document",
     title:"Order",
@@ -76,3 +71,4 @@ export default {
        
     ]
 }
+export default orderSchema;
