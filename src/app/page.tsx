@@ -1,5 +1,5 @@
 
-import Hero from '@/components/Hero'
+{/*import Hero from '@/components/Hero'
 import React from 'react'
 import LeatestProducts from '@/components/LeatestProducts'
 import Unique from '@/components/Unique'
@@ -23,10 +23,37 @@ export async function Fetch  () {
    <TrendingProducts />
    <Discount />
    {/*<ProductGrid />*/}
-  <Topcategory />
+  {/*<Topcategory />
    
     </>
   )
 }
 
-export default Fetch
+export default Fetch*/}
+
+import Hero from '@/components/Hero'
+import React from 'react'
+import LeatestProducts from '@/components/LeatestProducts'
+import Unique from '@/components/Unique'
+import Card from '@/components/Card'
+import TrendingProducts from '@/components/TrendingProducts'
+import Discount from '@/components/Discount'
+import Topcategory from '@/components/Topcategory'
+import FeaturedProducts from '@/components/featuredProducts' // Import the FeaturedProducts component
+
+const Page = () => {
+  return (
+    <div>
+      <Hero />
+      <FeaturedProducts /> {/* This component now handles fetching data */}
+      <LeatestProducts />
+      <Card />
+      <Unique />
+      <TrendingProducts />
+      <Discount />
+      <Topcategory />
+    </div>
+  )
+}
+
+export default Page;
